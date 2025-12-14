@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f172a; /* dark slate */
+  color: #e5e7eb;
+  min-height: 100vh;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: #020617;
+  padding: 32px;
+  border-radius: 12px;
+  width: 380px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #334155;
+}
+
+.input:focus {
+  border-color: #38bdf8;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #38bdf8;
+  color: #020617;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #0ea5e9;
+}
+
+.link {
+  margin-top: 16px;
+  text-align: center;
+  color: #38bdf8;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* ===== Dashboard Layout ===== */
+
+.dashboard-container {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #020617, #020617);
+  padding: 32px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.dashboard-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.dashboard-content {
+  margin-top: 20px;
+}
+
+.sweets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.sweet-card {
+  background: #020617;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.sweet-card h3 {
+  margin-bottom: 8px;
+}
+
+.sweet-card p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.sweet-card button {
+  margin-top: 10px;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.admin-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.admin-form input {
+  max-width: 180px;
+}
